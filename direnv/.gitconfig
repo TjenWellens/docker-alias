@@ -1,0 +1,3 @@
+[core]
+	# Use custom `.gitignore` and `.gitattributes`
+	excludesfile = /Users/tjen/.gitignore_global
