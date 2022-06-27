@@ -26,6 +26,38 @@ terraform plan
 ...
 ```
 
+### Tips
+
+#### place your .envrc as close to your code as possible
+do this
+```
+# good example
+.
+├── module_1
+│   ├── code
+│   │   └── .envrc  <<<<
+│   └── infra
+│       └── .envrc  <<<<
+└── module_2
+    ├── code
+    │   └── .envrc  <<<<
+    └── infra
+        └── .envrc  <<<<
+```
+
+instead of this
+```
+# bad example
+.
+├── .envrc          <<<<
+├── module_1
+│   ├── code-js
+│   └── infra
+└── module_2
+    ├── code-java
+    └── infra
+```
+
 ## (legacy) shell setup as alternative to direnv setup
 ```
 source shell/xxx.sh
