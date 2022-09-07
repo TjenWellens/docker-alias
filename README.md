@@ -5,6 +5,7 @@
 - [direnv](https://direnv.net/) (`brew install direnv`)
 - realpath (`brew install coreutils`)
 - copy [.direnvrc](./direnv/.direnvrc) to your home folder
+- 1password cli
 
 ### project setup
 - create a file `.envrc` in your project root

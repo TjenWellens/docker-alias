@@ -2,5 +2,7 @@
 # aws
 ###
 
-alias aws='docker run --rm -it -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
+export AWS_ACCESS_KEY_ID=op://my-vault/AWS_CLI/username
+export AWS_SECRET_ACCESS_KEY=op://my-vault/AWS_CLI/credential
+alias aws='docker run --rm -it -e AWS_ACCESS_KEY_ID -e AWS_SECRET_ACCESS_KEY -v $(pwd):/aws amazon/aws-cli'
 
